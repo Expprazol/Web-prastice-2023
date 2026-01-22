@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hlo{
+        height: 100px;
+        background-color: red;
+        border: 2px solid black;
+    }
+    .main{
+        border: 2px solid blue;
+        display: grid;
+        grid-template-areas: "logo logo logo"
+                                "nav  nav nav"
+                                "header header header"
+                             "side"
+                             "main main"
+                             "footer footer footer";
+     
+    }
+    .hlo1{
+        grid-area: logo;
+        background-color: aqua;
+    }
+    .hlo2{
+        grid-area: nav;
+        background-color: rgb(249, 4, 208);
+    }
+    .hlo3{
+        grid-area: header;
+        background-color: azure;
+    }
+    .hlo4{
+        grid-area: side;
+        background-color: brown;
+    }
+    .hlo5{
+        grid-area: main;
+        background-color: blueviolet;
+    }
+    .hlo6{
+        grid-area: footer;
+        background-color: coral;
+    }
+
+ 
+</style>
+<body>
+    <div class="main">
+        <div class="hlo hlo1">1</div>
+        <div class="hlo hlo2">2</div>
+        <div class="hlo hlo3">3</div>
+        <div class="hlo hlo4">4</div>
+        <div class="hlo hlo5">5</div>
+        <div class="hlo hlo6">6</div>
+    </div>
+</body>
+</html>
